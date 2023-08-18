@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>PCAP to HC22000 Conversion</title>
+    <script type="text/javascript" src="content.js"></script>
+    <style>
+      @font-face {
+        font-family: classicConsoleNeue;
+        src: url(assets/fonts/clacon2.woff2) format("woff2");
+      }
+      body {
+        width: 300px;
+        padding: 10px;
+        background-color: #000100;
+        color: #0f0;
+        font-family: classicConsoleNeue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      label.label input[type="file"] {
+        position: absolute;
+        top: -1000px;
+      }
+      .label {
+        margin: 10px 0;
+        background-color: #000;
+        border: 1px solid #0f0;
+        border-radius: 3px;
+        color: #0f0;
+        cursor: pointer;
+        display: block;
+        font-size: large;
+        padding: 5px;
+      }
+      label:hover {
+        border-color: #080;
+        background-color: #080;
+      }
+      button {
+        background-color: #000;
+        border: 1px solid #0f0;
+        color: #0f0;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 3px;
+        font-size: large;
+        font-family: "classicConsoleNeue";
+      }
+      button:hover {
+        background-color: #080;
+        border-color: #080;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>.pcap to .hc22000</h1>
+      <label class="label">
+        <input type="file" id="fileInput" />
+        <span id="labelText">Select a file</span>
+      </label>
+      <button id="convertButton">Convert</button>
+    </main>
+  </body>
+</html>
